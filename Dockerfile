@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 ubuntu:22.0
+FROM --platform=linux/amd64 ubuntu:22.04
 RUN apt update -y
 RUN apt install python3-pip -y
 ENTRYPOINT ["python", "-m", "http.server"]
